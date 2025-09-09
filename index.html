@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ömer Bilgili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-color: #111118;
+        --surface-color: rgba(36, 36, 44, 0.7);
+        --primary-text-color: #f0f0f5;
+        --secondary-text-color: #a0a0b0;
+        --border-color: #2a2a32;
+        --accent-color: #4f46e5;
+        --shadow-color: rgba(0, 0, 0, 0.2);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--bg-color);
+        color: var(--primary-text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      @keyframes fadeInSlideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container svg {
+        width: 99px;
+        height: auto;
+        margin-right: 11px;
+      }
+
+      .container {
+        max-width: 700px;
+        width: 100%;
+        background: var(--surface-color);
+        padding: 40px;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 10px 30px var(--shadow-color);
+        backdrop-filter: blur(10px);
+      }
+
+      .container > * {
+        opacity: 0;
+        animation: fadeInSlideUp 0.6s ease-out forwards;
+      }
+
+      h1 {
+        animation-delay: 0.1s;
+      }
+      p:nth-of-type(1) {
+        animation-delay: 0.2s;
+      }
+      p:nth-of-type(2) {
+        animation-delay: 0.3s;
+      }
+      ul {
+        animation-delay: 0.4s;
+      }
+      .note {
+        animation-delay: 0.5s;
+      }
+      footer {
+        animation-delay: 0.6s;
+      }
+
+      h1 {
+        font-size: 2.2em;
+        font-weight: 700;
+        margin: 0 0 15px 0;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      p {
+        line-height: 1.7;
+        font-size: 1.05em;
+        color: var(--secondary-text-color);
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 30px 0;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.15em;
+        padding: 18px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 1;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      li:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        transform: translateY(-4px) scale(1.02);
+        border-color: transparent;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+      }
+
+      li strong {
+        font-weight: 500;
+      }
+
+      li span {
+        color: #888;
+        font-size: 0.9em;
+        background-color: var(--border-color);
+        padding: 4px 8px;
+        border-radius: 5px;
+      }
+
+      .note {
+        margin-top: 30px;
+        padding: 15px;
+        font-style: italic;
+        color: var(--secondary-text-color);
+        background-color: rgba(0, 0, 0, 0.15);
+        border-left: 3px solid #ffffff;
+        border-radius: 0 6px 6px 0;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 0.9em;
+        text-align: center;
+        color: #666;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 20px 15px;
+          align-items: flex-start;
+        }
+        .container {
+          padding: 25px;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+        p {
+          font-size: 1em;
+        }
+        li {
+          padding: 15px 10px;
+          font-size: 1.05em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="331.37439"
+          height="98.73523"
+          viewBox="0,0,331.37439,98.73523"
+        >
+          <g transform="translate(-74.31281,-130.63239)">
+            <g
+              fill="#ffffff"
+              fill-rule="evenodd"
+              stroke="none"
+              stroke-miterlimit="10"
+            >
+              <path
+                d="M96.6872,132.4654c1.65,-1.006 4.655,-1.831 6.677,-1.833c5.747,-0.006 7.049,2.269 14.31,24.996c1.493,4.675 3.007,8.808 3.364,9.185c0.357,0.377 4.686,-2.677 9.62,-6.787c11.695,-9.742 18.324,-14.003 19.68,-12.647c0.712,0.712 -1.253,2.729 -6.309,6.479c-10.336,7.666 -20.842,16.926 -20.842,18.371c0,2.107 4.237,12.399 5.104,12.399c0.455,0 4.684,-2.514 9.398,-5.587c4.714,-3.072 13.167,-7.801 18.784,-10.507c5.618,-2.706 11.142,-5.591 12.276,-6.411c5.086,-3.674 7.06,5.447 4.872,22.505l-0.577,4.5l4.321,-7.756c12.097,-21.709 21.769,-23.924 21.807,-4.994c0.014,6.82 1.039,9.235 2.407,5.671c1.523,-3.969 8.264,-12.85 11.037,-14.541c7.741,-4.72 10.65,-1.541 11.67,12.757c1.226,17.176 3.814,20.178 12.673,14.701c5.357,-3.313 9.223,-8.433 9.238,-12.236c0.022,-5.968 7.479,-17.752 13.059,-20.638c4.083,-2.111 6.672,-1.814 9.588,1.102c4.785,4.785 0.572,13.612 -9.589,20.091c-6.702,4.273 -7.719,7.084 -4.155,11.482c6.106,7.537 26.411,-2.552 38.626,-19.192l3.576,-4.872l-2.184,-2.955c-3.76,-5.085 -0.541,-13.12 5.256,-13.12c3.513,0 4.317,4.116 2.198,11.25c-0.687,2.314 1.43406,3.00693 8.05606,0.75093c6.622,-2.256 8.22182,-3.02101 10.05382,-0.75801c1.832,2.263 1.18333,4.13361 0.93033,5.01861c-0.253,0.885 -3.58121,17.09346 -3.00621,20.15646c0.889,4.74 3.292,5.254 14.332,3.064c15.56,-3.087 68.274,-3.173 65.207,-0.107c-0.266,0.266 -12.833,0.98 -27.928,1.587c-15.095,0.607 -28.364,1.284 -29.488,1.503c-1.124,0.219 -5.954,1.169 -10.736,2.111c-17.141,3.377 -18.902,0.544 -16.525,-26.576c0.156,-1.777 -0.215,-2.398 -1.281,-2.149c-0.825,0.193 -3.975,0.583 -7.001,0.867c-5.428,0.508 -5.554,0.593 -9.5,6.476c-14.7,21.914 -40.341,31.28 -48.043,17.549l-2.086,-3.72l-3.435,3.615c-11.388,11.983 -22.088,8.262 -24.117,-8.388c-2.658,-21.806 -5.281,-20.498 -18.184,9.067c-1.31,3.003 -2.14,3.75 -3.887,3.5c-2.807,-0.401 -3.61,-4.442 -3.689,-18.567c-0.085,-14.981 -2.596,-13.681 -13.547,7.01c-11.266,21.285 -13.969,18.884 -11.553,-10.26c0.478,-5.775 0.655,-10.716 0.392,-10.981c-1.586,-1.595 -37.35,19.748 -37.35,22.289c0,0.76 1.737,4.07 3.86,7.354c5.782,8.945 10.826,12.252 13.94,9.138c0.846,-0.846 1.513,-0.887 2.26,-0.14c1.408,1.408 -4.382,6.34 -7.441,6.34c-3.724,0 -10.891,-5.368 -15.119,-11.323c-2.2,-3.099 -4.45,-5.643 -5,-5.655c-0.55,-0.012 -7.525,6.124 -15.5,13.636c-21.971,20.693 -28.18,25.097 -31.501,22.341c-5.246,-4.354 4.63,-19.932 28.028,-44.213c5.76,-5.977 10.473,-11.313 10.473,-11.858c0,-2.036 -8.871,-30.779 -10.43,-33.792c-2.406,-4.653 -8.997,-2.992 -13.125,3.308c-1.541,2.351 -3.445,2.645 -3.445,0.532c0,-1.48 6.264,-8.166 9.5,-10.139M297.8542,158.2954c1.456,-1.457 2.45,-0.529 2.149,2.006c-0.407,3.444 -2.816,4.365 -2.816,1.077c0,-1.329 0.3,-2.717 0.667,-3.083M261.9282,164.6174c3.195,-2.513 4.663,-2.139 5.071,1.293c0.35,2.949 -6.091,10.777 -10.924,13.276l-2.716,1.405l1.011,-3.732c1.312,-4.841 4.298,-9.678 7.558,-12.242M105.5022,187.9304c5.525,-5.608 10.323,-10.026 10.663,-9.815c0.34,0.21 1.699,2.689 3.02,5.508l2.401,5.127l-4.95,4.183c-2.722,2.301 -9.808,8.8 -15.747,14.443c-11.312,10.748 -20.58,18.252 -22.543,18.252c-5.058,0 8.328,-18.582 27.156,-37.698M400.5762,190.0584c1.013,-2.641 5.111,-1.382 5.111,1.57c0,1.833 -0.602,2.585 -2.254,2.82c-2.458,0.349 -3.853,-1.795 -2.857,-4.39"
+              />
+            </g>
+          </g>
+        </svg>
+        Hi there 👋🏻
+      </h1>
+
+      <p>
+        The following names were created by
+        <strong>Ömer Bilgili</strong> between 2017 and 2025.<br />
+        They are not registered trademarks, but are original project names
+        reserved for personal and non-commercial use.<br />
+        Some names are marked with <strong>™</strong> to indicate potential
+        future trademark usage.
+      </p>
+
+      <p>
+        Please do not use them for public-facing or commercial projects without
+        permission.
+      </p>
+
+      <ul>
+        <li><strong>Xmer™</strong> <span>2017</span></li>
+        <li><strong>XmerOriginals™</strong> <span>2020</span></li>
+        <li><strong>Lunetune</strong> <span>2025</span></li>
+        <li><strong>TinDay</strong> <span>2025</span></li>
+      </ul>
+
+      <p class="note">
+        This list is published to document original authorship and intended use.
+      </p>
+
+      <footer>©2025 Ömer Bilgili</footer>
+    </div>
+
+    <script>
+      console.log("©2025 Ömer Bilgili");
+    </script>
+  </body>
+</html>
